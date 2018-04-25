@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html>
+<!-- html should have lang attribute, we use en-ca to declare it is Canadian English -->
+<html lang="en-ca">
 <head>
-	<title>Home Page</title>
+	<meta charset="utf-8">
+	<title>elfCrochets</title>
+	<link rel="stylesheet"  href=" styles/style.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
 </head>
-<body>
-	<h1>Homepage</h1>
-	<p> The changes are working.....yay!!</p>
+		<body id="main-body" class="site-body">
+	 	<!-- it is important to add classes and Ids to elements, to be able to access them via CSS -->
+	 	<!-- Header starts here -->
+			<header id="site-header" class="site-header">
+				<p class="helf"> 
+		elf.Crochets 
+			</p>
 
+			<!-- first image is a logo and is temporary -->
+			<img class="logo" src="images/temp_logo.jpg" alt="Crochet logo" width="205">
+
+			<nav class="hnav">
+				
+				<ul class="top">
+					<li class="nav">
+						<a href="index.html">HOME</a>
+ 					</li>
+					<li class="nav"> 
+						<a href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+
+					<ul class="buttons"> 
+					<li class="nav"> 
+						<a href="patterns.html">PATTERNS</a>
+					</li>
+					<li class="nav">
+						<a href="Product">PRODUCTS</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- main navigation ends -->
+			<!-- mobile navigation start -->
+
+		<div id="mySidenav" class="hamburger-menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HOME</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+		<!-- mobile navigation end -->
+		
+		</header>
+		<!-- header ends here -->
+		<!-- body starts -->
+
+		<link rel="stylesheet" type="text/css" href="index.css"> 	
+
+	<p class="photo1h">Slouchy beanie</p>
+	<img src="images/hat_collage.jpg" class="photo1" alt="slouchy-beanie-photo" width="305">
+
+	<h1 class="goals-title">Website Goals</h1>
+	<p class="goals">The purpose of this site is that people who crochet can easily find patterns that are great for beginners to work with, or for people of a higher skill level to whip up in no time. For the first patterns there will be 2 different hat patterns for sale. A crocheted slouchy beanie (with or without a pompom). Each pattern will be sold for 3 dollars, the pattern will include a PDF that can be used online or printed. More patterns will be added as they are created This site will also have completed projects for sale by the owner, for 15 dollars each. </p> 
+
+
+	<h2 class="about-title">About Emma-Leigh</h2>
+	<p class="about">I started Crocheting when I was 16, and I always found crochet patterns way more difficult to follow than they needed to be. So I decided to create my own patterns and share them with others that are just looking for an easy to follow crochet pattern. I still need more text here but don't know what else to write so this is just some random filler text that I am writing out.</p>
+
+
+<p class="photo2h">Slouchy beanie with pompom</p>
+<img src="images/beanie.png" class="photo2" alt="slouchy beanie with pompom" width="305">
+
+<p class="photo3h">Fitted hats with optional pompom</p>
+<img src="images/hats.jpg" class="photo3" alt="fitted hats (with optional pompom)" width="305">
+
+<nav class="bnav">
+				<ul class="top">
+					<li class="nav">
+						<a href="home.html">HOME</a>
+					</li>
+					<li class="nav">
+						<a href="contact-us.html">CONTACT</a>
+					</li>
+				</ul>
+
+				<ul class="button">
+					<li class="nav"> 
+						<a href="patterns.html">PATTERNS</a>
+					</li>
+					<li class="nav">
+						<a href="Product">PRODUCTS</a>
+					</li>
+				</ul>
+			</nav>
+<!-- Body ends  -->
+<!-- Footer starts -->
+
+<footer id="site-footer" class="site-footer">
+	<p class="felf"> 
+		elf.Crochets 
+			</p>
+		<a href="https://www.instagram.com/">
+			<img src="images/001-instagram.png" class="instalogo" alt="instagram logo">
+		</a>
+		<a href="https://www.facebook.com/">
+			<img src="images/004-facebook.png" class="fblogo" alt="facebook logo">
+		</a>
+
+	<p class="copyright">Copyright &copy; 2018 Fex Emma-Leigh</p>
+</footer>
+<!-- footer ends -->
+<script src="scripts/main.js"></script>
 </body>
 </html>

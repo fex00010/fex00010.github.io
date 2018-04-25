@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- html should have lang attribute, we use en-ca to declare it is Canadian English -->
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Patterns</title>
+	<link rel="stylesheet"  href="styles/style.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+</head>
+		<body id="main-body" class="site-body">
+	 	<!-- it is important to add classes and Ids to elements, to be able to access them via CSS --> 
+	 	<!-- Header starts here -->
+			<header id="site-header" class="site-header">
+				<p class="helf"> 
+		elf.Crochets 
+			</p>
+
+			<!-- first image is a logo and is temporary -->
+			<img class="logo" src="images/temp_logo.jpg" alt="Crochet logo" width="205">
+
+			<div class="hamburger-menu"></div>
+
+			<nav class="hnav">
+				
+				<ul>
+					<li class="nav">
+						<a href="index.html">HOME</a>
+ 					</li>
+					<li class="nav"> 
+						<a href="contact.html">CONTACT</a>
+					</li>
+
+					<li class="nav"> 
+						<a href="patterns.html">PATTERNS</a>
+					</li>
+					<li class="nav">
+						<a href="Product">PRODUCTS</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="mySidenav" class="hamburger-menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HOME</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div>
+		</header>
+		<!-- Slideshow container -->
+<div class="slideshow">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" >
+    <div class="numbertext">1 / 3</div>
+    <img src="images/hat_collage.jpg" alt="Slouchy Beanie" style="width:30%">
+    <div class="text">Slouchy beanie</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/beanie.png" alt="Slouchy beanie with pompom" style="width:20%">
+    <div class="text">Slouchy beanie with pompom</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/hats.jpg" alt="Fitted hats with optional pompom" style="width:30%">
+    <div class="text">Fitted hats with optional pompom</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!-- slideshow container ends -->
+
+<section class="para1">
+<h1 class="slouchy">Slouchy beanie</h1> 
+<ul>
+<li class="purchase 1"> 
+	<a href="notalinkyet"> Click here to Purchase</a>
+</li>
+</ul>
+<p> This is an easy pattern, great for beginners. For this pattern you will need one skene of red heart super saver yarn in size 4 bulky.<br> Any similar yarn should work, but I have had the best results with this one. You will also need a size 5.5 crochet hook.</p>
+</section>
+<br>
+<section class="para2">
+<h2> Slouchy beanie with pompom</h2>
+<ul>
+<li class="purchase 2"> 
+	<a href="notalinkyet"> Click here to Purchase</a>
+</li>
+</ul>
+<p> This is an easy pattern, great for beginners. For this project you will need one skene of red heart super saver yarn in size 4 bulky. <br> Any similar yarn should work, but I have had the best results with this one. You will also need a size 5.5 crochet hook.</p>
+</section>
+<br>
+<section class="para3">
+<h3> Fitted hat with optional pompom</h3>
+<ul>
+<li class="purchase 3"> 
+	<a href="notalinkyet"> Click here to Purchase</a>
+</li>
+</ul>
+<p> This is an easy pattern, great for beginners. For this project you will need one skene of red heart super saver yarn in size 4 bulky. <br> Any similar yarn should work, but I have had the best results with this one. You will also need a size 5.5 crochet hook.</p>
+</section>
+
+<br>
+<br>
+
+<footer id="site-footer" class="site-footer">
+	<p class="felf"> 
+		elf.Crochets 
+			</p>
+		<a href="https://www.instagram.com/">
+			<img src="images/001-instagram.png" class="instalogo" alt="instagram logo">
+		</a>
+		<a href="https://www.facebook.com/">
+			<img src="images/004-facebook.png" class="fblogo" alt="facebook logo">
+		</a>
+
+	<p class="copyright">Copyright &copy; 2018 Fex Emma-Leigh</p>
+</footer>
+<!-- footer ends -->
+<script src="scripts/slider.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
